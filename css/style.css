@@ -297,7 +297,7 @@ span {
 }
 
 .heading {
-  font-size: 8rem;
+  font-size: 7rem;
   text-align: center;
   margin: 5rem 0;
 }
@@ -546,13 +546,11 @@ span {
 
 /*! ======================================================= */
 /*^ Project section */
-
 .project {
-  background:  black;
+  background: black;
 }
 
 .project-box {
-
   background-size: cover;
   display: flex;
   align-items: center;
@@ -575,7 +573,9 @@ span {
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
-
+.wrapper strong{
+  color: var(--main-color);
+}
 
 .project-item {
   min-height: 400px;
@@ -596,11 +596,9 @@ span {
 }
 
 .project-item:hover {
-
   border: 3px solid var(--main-color);
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 0 50px var (--main-color);
-
+  box-shadow: 0 0 50px var(--main-color);
 }
 
 .project-item h2 {
@@ -610,6 +608,7 @@ span {
 .project-item p {
   font-size: 1.4rem;
 }
+
 
 /* ======================================================= */
 .contact {
