@@ -10,10 +10,10 @@
 }
 
 :root {
-  --bg-color: black;
+  --bg-color: rgb(24, 24, 24);
   --second-bg-color: #131313;
   --text-color: white; 
-  --main-color: #307ae1;
+  --main-color: #154e9e;
 }
 
 html {
@@ -69,7 +69,7 @@ body {
 .header a:hover,
 .navbar a.active {
   color: var(--main-color);
-  border-bottom: 3px solid var(--main-color);
+  
 }
 
 #menu-icon {
@@ -116,18 +116,29 @@ span {
 .home-content h1 {
   font-size: 7rem;
   font-weight: 700;
-  margin-top: 1.5rem;
+  margin-top: 1.1rem;
   line-height: 1;
 }
 
 .home-img {
   border-radius: 50%;
+  position: relative;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
 }
 
 .home-img img {
   position: relative;
-  top: 3rem;
-  width: 32vw;
+  top: 2.8rem;
+  width: 30vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -825,12 +836,12 @@ span {
   }
 
   .home-content h3 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .home-content h1 {
     font-size: 8rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
   }
 
@@ -845,7 +856,7 @@ span {
   }
 
   .services h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .services-container {
